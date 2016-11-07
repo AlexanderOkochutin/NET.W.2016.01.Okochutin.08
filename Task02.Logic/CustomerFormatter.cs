@@ -65,22 +65,22 @@ namespace Task02.Logic
         #endregion
 
         #region Private methods
-        private string FormatCustomerWithTab(Customer customer)
+        private static string FormatCustomerWithTab(Customer customer)
         {
             return $"Name: {customer.Name}\t ContactPhone: {customer.Phone}\t Revenue: {customer.Revenue}\t";
         }
 
-        private string FormatCustomerWithNewLine(Customer customer)
+        private static string FormatCustomerWithNewLine(Customer customer)
         {
             return $"Name: {customer.Name}\n ContactPhone: {customer.Phone}\n Revenue: {customer.Revenue}\n";
         }
 
-        private string FormatCustomerWithSingleQuote(Customer customer)
+        private static string FormatCustomerWithSingleQuote(Customer customer)
         {
             return $"Name: '{customer.Name}' ContactPhone: '{customer.Phone}' Revenue: '{customer.Revenue}'";
         }
 
-        private string FormatCustomerWithDoubleQuote(Customer customer)
+        private static string FormatCustomerWithDoubleQuote(Customer customer)
         {
             return $"Name: \"{customer.Name}\" ContactPhone: \"{customer.Phone}\" Revenue: \"{customer.Revenue}\"";
         }
