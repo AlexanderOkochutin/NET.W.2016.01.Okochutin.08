@@ -67,26 +67,22 @@ namespace Task02.Logic
         #region Private methods
         private string FormatCustomerWithTab(Customer customer)
         {
-            return String.Format("Name: {0}\t ContactPhone: {1}\t Revenue: {2}\t",
-                customer.Name, customer.Phone, customer.Revenue);
+            return $"Name: {customer.Name}\t ContactPhone: {customer.Phone}\t Revenue: {customer.Revenue}\t";
         }
 
         private string FormatCustomerWithNewLine(Customer customer)
         {
-            return String.Format("Name: {0}\n ContactPhone: {1}\n Revenue: {2}\n",
-                customer.Name, customer.Phone, customer.Revenue);
+            return $"Name: {customer.Name}\n ContactPhone: {customer.Phone}\n Revenue: {customer.Revenue}\n";
         }
 
         private string FormatCustomerWithSingleQuote(Customer customer)
         {
-            return String.Format("Name: '{0}' ContactPhone: '{1}' Revenue: '{2}'",
-                customer.Name, customer.Phone, customer.Revenue);
+            return $"Name: '{customer.Name}' ContactPhone: '{customer.Phone}' Revenue: '{customer.Revenue}'";
         }
 
         private string FormatCustomerWithDoubleQuote(Customer customer)
         {
-            return String.Format("Name: \"{0}\" ContactPhone: \"{1}\" Revenue: \"{2}\"",
-                customer.Name, customer.Phone, customer.Revenue);
+            return $"Name: \"{customer.Name}\" ContactPhone: \"{customer.Phone}\" Revenue: \"{customer.Revenue}\"";
         }
         #endregion
     }
